@@ -1,0 +1,26 @@
+{
+  "name": "telecom-ticket-lens",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "homepage": "https://dcezar286-art.github.io/telecom-ticket-lens",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.3",
+    "xlsx": "^0.18.5",
+    "jspdf": "^2.5.1",
+    "jspdf-autotable": "^3.8.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.1.4",
+    "gh-pages": "^6.0.0"
+  }
+}
