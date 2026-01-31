@@ -1,8 +1,8 @@
 import React from "react";
 
-export default function DataTable({ columns, rows, onRowClick }) {
+export default function DataTable({ columns, rows, onRowClick, maxHeight = "60vh" }) {
   return (
-    <div className="tableWrap">
+    <div className="tableWrap" style={{ maxHeight, overflow: "auto" }}>
       <table>
         <thead>
           <tr>

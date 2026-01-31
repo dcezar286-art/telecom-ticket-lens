@@ -178,3 +178,52 @@ th{
 }
 
 .small{ font-size: 12px; color: var(--muted); }
+select.select {
+  appearance: none;
+  background: rgba(0,0,0,.25);
+  color: var(--text);
+}
+
+select.select:focus {
+  outline: 2px solid rgba(43,116,255,.55);
+  outline-offset: 2px;
+}
+
+/* Isso aqui resolve a “lista branca com texto branco” em muitos Windows */
+select.select option {
+  background: #0b1220;
+  color: #e8eefc;
+}
+
+/* Evita linhas gigantes */
+td {
+  vertical-align: middle;
+  line-height: 1.2;
+}
+
+/* Texto em uma linha só com reticências */
+td, th {
+  white-space: nowrap;
+}
+
+/* Mas permite scroll horizontal naturalmente */
+.tableWrap table {
+  table-layout: fixed;
+}
+
+/* Reticências quando passar do tamanho */
+td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* Labels não podem quebrar em várias linhas */
+.label {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.2;
+}
+.input, .select, .btn {
+  line-height: 1.2;
+}
